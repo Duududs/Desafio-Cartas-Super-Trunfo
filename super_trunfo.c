@@ -16,8 +16,11 @@ int main() {
     float area2;
     float pib2;
     int pontosTuristicos2;
-
-    printf("Bem-vindo ao Super Trunfo!\n\n");
+    
+    // Desafio Cartas Super Trunfo
+    
+    printf("Desafio Cartas Super Trunfo\n\n");
+    printf("Bem-vindo ao Super Trunfo!!\n\n");
     printf("Informe os dados da primeira carta:\n");
     printf("Estado (A-H): ");
     scanf(" %c", &estado1);
