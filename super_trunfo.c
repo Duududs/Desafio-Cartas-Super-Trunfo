@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+    // Desafio Cartas Super Trunfo
     char estado1;
     char codigo1[4];
     char nomeCidade1[50];
@@ -16,8 +17,6 @@ int main() {
     float area2;
     float pib2;
     int pontosTuristicos2;
-    
-    // Desafio Cartas Super Trunfo
     
     printf("Desafio Cartas Super Trunfo\n\n");
     printf("Bem-vindo ao Super Trunfo!!\n\n");
@@ -70,6 +69,43 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+
+    
+    // Desafio Lógica Super Trunfo
+    char estado3[] = "SP";
+    char cidade3[] = "São Paulo";
+    char codigo3[] = "SP-001";
+    int populacao3 = 11050000;
+    float area3 = 1521.11;
+    float pib3 = 700000;
+    int pontos_turisticos3 = 500;
+
+    char estado4[] = "MG";
+    char cidade4[] = "Belo Horizonte";
+    char codigo4[] = "MG-001";
+    int populacao4 = 4000000;
+    float area4 = 1182.3;
+    float pib4 = 500000;
+    int pontos_turisticos4 = 300;
+
+    float densidade_populacional3 = populacao3 / area3;
+    float pib_per_capita3 = pib3 / populacao3;
+    
+    float densidade_populacional4 = populacao4 / area4;
+    float pib_per_capita4 = pib4 / populacao4;
+    
+    printf("\n\nDesafio Lógica Super Trunfo!!\n\n");
+    printf("Comparação de cartas (Atributo: População):\n");
+    printf("\nCarta 1 - %s (%s): %d\n", cidade3, estado3, populacao3);
+    printf("Carta 2 - %s (%s): %d\n", cidade4, estado4, populacao4);
+
+    if (populacao3 > populacao4) {
+        printf("\nResultado: Carta 1 (%s) venceu!\n", cidade3);
+    } else if (populacao4 > populacao3) {
+        printf("\nResultado: Carta 2 (%s) venceu!\n", cidade4);
+    } else {
+        printf("\nResultado: Empate entre as cartas!\n");
+    }
 
     return 0;
 }
